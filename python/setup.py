@@ -13,7 +13,7 @@ import distutils.cygwinccompiler
 class CustomBuild(build):
     if platform.system() == 'Windows':
         distutils.cygwinccompiler.get_msvcr = lambda: []
-        
+
         def initialize_options(self):
             super(CustomBuild, self).initialize_options()
             self.compiler = 'mingw32'
@@ -38,7 +38,7 @@ lttoolbox_module = Extension(
     name='_lttoolbox',
     sources=get_sources(),
     swig_opts = ["-c++", "-I..", "-Wall"],
-    include_dirs=['..', '/usr/include/libxml2', 
+    include_dirs=['..', '/usr/include/libxml2',
     r'../../externallibs/win64/libxml2-2.9.3-win32-x86_64/include/libxml2',
     r'../utf8',
     r'../../externallibs/win64/iconv-1.14-win32-x86_64/include',
