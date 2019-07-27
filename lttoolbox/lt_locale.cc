@@ -50,6 +50,6 @@ LtLocale::tryToSetLocale()
 #endif
 #ifdef __MINGW32__
   //SetConsoleInputCP(65001);
-  SetConsoleOutputCP(65001);
+  // SetConsoleOutputCP(65001);
 #endif
 }
