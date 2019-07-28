@@ -19,7 +19,7 @@
 #include <clocale>
 #include <iostream>
 #ifdef __MINGW32__
-#include <windows.h>
+// #include <windows.h>
 #endif
 
 using namespace std;
