@@ -45,7 +45,6 @@ lttoolbox_module = Extension(
     ],
     library_dirs=['/usr/include/libxml2',
     r'../../externallibs/win64/libxml2-2.9.3-win32-x86_64/lib',
-    r'C:/Python37/libs',
     ],
     extra_compile_args='-Wall -Wextra -g -O2 -std=c++2a'.split(),
     extra_link_args=['-lxml2'],
